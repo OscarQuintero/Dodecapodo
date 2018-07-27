@@ -31,7 +31,12 @@ void avanza(int velocidad)
 
 void retrocede(int velocidad)
 {
-  
+  digitalWrite(PHIN1, LOW);
+  digitalWrite(PHIN2, HIGH);
+  digitalWrite(PHIN3, HIGH);
+  digitalWrite(PHIN4, LOW);
+  analogWrite(MotoresDerechos, velocidad);
+  analogWrite(MotoresIzquierdos, velocidad);
 }
 
 void giraDerecha(int velocidad)
