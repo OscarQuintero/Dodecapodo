@@ -12,7 +12,10 @@ int MotoresIzquierdos = 3;
 //-----Declaracion de funciones
 void detente()
 {
-  
+  digitalWrite(PHIN1, LOW);
+  digitalWrite(PHIN2, LOW);
+  digitalWrite(PHIN3, LOW);
+  digitalWrite(PHIN4, LOW);
 }
 
 void avanza(int velocidad)
