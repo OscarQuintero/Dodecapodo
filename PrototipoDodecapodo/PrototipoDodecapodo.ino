@@ -45,7 +45,12 @@ void giraIzquierda(int velocidad)
 
 //------------------------------------------------
 void setup() {
-  pinMode(13, OUTPUT);
+  pinMode(PHIN1, OUTPUT);
+  pinMode(PHIN2, OUTPUT);
+  pinMode(PHIN3, OUTPUT);
+  pinMode(PHIN4, OUTPUT);
+  pinMode(MotoresDerechos, OUTPUT);
+  pinMode(MotoresIzquierdos, OUTPUT);
 
 }
 
