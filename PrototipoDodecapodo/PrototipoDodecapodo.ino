@@ -1,6 +1,9 @@
 //Version 1.0 del firmware para el Dodecapodo PACO
 //------------------------------------------------
 //Entradas del puente en H
+
+//#include "sensores.h"
+
 int PHIN1 = 22;
 int PHIN2 = 23;
 int PHIN3 = 26;
@@ -58,6 +61,7 @@ void giraIzquierda(int velocidad)
   analogWrite(MotoresDerechos, velocidad);
   analogWrite(MotoresIzquierdos, velocidad);
 }
+//---Control de la Garra mecanica---------------------------------------
 
 
 
