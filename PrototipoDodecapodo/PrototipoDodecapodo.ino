@@ -23,8 +23,8 @@ void detente()
 
 void avanza(int velocidad)
 {
-  digitalWrite(PHIN1, HIGH);
-  digitalWrite(PHIN2, LOW);
+  digitalWrite(PHIN1, LOW);
+  digitalWrite(PHIN2, HIGH);
   digitalWrite(PHIN3, LOW);
   digitalWrite(PHIN4, HIGH);
   analogWrite(MotoresDerechos, velocidad);
@@ -34,16 +34,6 @@ void avanza(int velocidad)
 
 void retrocede(int velocidad)
 {
-  digitalWrite(PHIN1, LOW);
-  digitalWrite(PHIN2, HIGH);
-  digitalWrite(PHIN3, HIGH);
-  digitalWrite(PHIN4, LOW);
-  analogWrite(MotoresDerechos, velocidad);
-  analogWrite(MotoresIzquierdos, velocidad);
-}
-
-void giraDerecha(int velocidad)
-{
   digitalWrite(PHIN1, HIGH);
   digitalWrite(PHIN2, LOW);
   digitalWrite(PHIN3, HIGH);
@@ -52,18 +42,43 @@ void giraDerecha(int velocidad)
   analogWrite(MotoresIzquierdos, velocidad);
 }
 
+void giraDerecha(int velocidad)
+{
+  digitalWrite(PHIN1,LOW);
+  digitalWrite(PHIN2,HIGH);
+  digitalWrite(PHIN3,HIGH);
+  digitalWrite(PHIN4,LOW);
+  analogWrite(MotoresDerechos, velocidad);
+  analogWrite(MotoresIzquierdos, velocidad);
+}
+
 void giraIzquierda(int velocidad)
 {
-  digitalWrite(PHIN1, LOW);
-  digitalWrite(PHIN2, HIGH);
-  digitalWrite(PHIN3, LOW);
-  digitalWrite(PHIN4, HIGH);
+  digitalWrite(PHIN1,HIGH);
+  digitalWrite(PHIN2,LOW);
+  digitalWrite(PHIN3,LOW);
+  digitalWrite(PHIN4,HIGH);
   analogWrite(MotoresDerechos, velocidad);
   analogWrite(MotoresIzquierdos, velocidad);
 }
 //---Control de la Garra mecanica---------------------------------------
 
-
+void levantaGarra()
+{
+  
+}
+void bajaGarra()
+{
+  
+}
+void detenGarra()
+{
+  
+}
+void accionaGarra()
+{
+  
+}
 
 //------------------------------------------------
 void setup() {
