@@ -12,6 +12,9 @@ int PHIN4 = 25;
 int MotoresDerechos = 2;
 int MotoresIzquierdos = 3;
 
+int ElevadorGarra = 30;
+int PinzaGarra = 30;
+
 //-----Declaracion de funciones
 void detente()
 {
@@ -65,7 +68,7 @@ void giraIzquierda(int velocidad)
 
 void levantaGarra()
 {
-  
+   
 }
 void bajaGarra()
 {
