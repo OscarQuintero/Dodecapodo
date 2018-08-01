@@ -84,6 +84,8 @@ void accionaGarra()
   
 }
 
+
+
 //------------------------------------------------
 void setup() {
   pinMode(PHIN1, OUTPUT);
@@ -110,6 +112,9 @@ void loop() {
   delay(1000);
   detente();
   delay(1000);
+
+  giraDerecha(100);
+  delay(5000);
 
   digitalWrite(13, HIGH);
   
