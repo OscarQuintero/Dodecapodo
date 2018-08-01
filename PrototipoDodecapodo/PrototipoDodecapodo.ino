@@ -104,7 +104,7 @@ void loop() {
   
 
   avanza(255);
-  delay(2000);
+  delay(5000);
   detente();
   delay(2000);
   
@@ -113,18 +113,15 @@ void loop() {
   detente();
   delay(1000);
 
-  giraDerecha(100);
+  digitalWrite(13, HIGH);
+  giraDerecha(200);
   delay(5000);
 
-  digitalWrite(13, HIGH);
-  
-  giraIzquierda(100);
+  giraIzquierda(200);
   delay(6000);
   detente();
-
-  
-  
   digitalWrite(13, LOW);
+  
   delay(200);
 
   
